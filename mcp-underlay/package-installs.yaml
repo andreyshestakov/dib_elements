@@ -4,3 +4,4 @@ cloud-init:
 linux-image-generic:
 net-tools:
 isc-dhcp-client:
+python:

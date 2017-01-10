@@ -7,9 +7,4 @@ fi
 set -eu
 set -o pipefail
 
-echo "br_netfilter" >> /etc/modules
-
-echo "
-net.ipv4.ip_forward=1
-net.bridge.bridge-nf-call-iptables=0
-" >> /etc/sysctl.d/60-mcp-underlay.conf
+echo "127.0.0.1 localhost" >> /etc/hosts
